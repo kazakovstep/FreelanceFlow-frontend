@@ -1,0 +1,48 @@
+.profilePage {
+	padding: 24px;
+}
+
+.pageTitle {
+	margin: 0 0 24px 0;
+	font-size: 24px;
+	font-weight: 600;
+	color: #262626;
+}
+
+.avatarCard {
+	text-align: center;
+}
+
+.avatarWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+
+.avatarWrapper :global(.ant-avatar) {
+	background: #1890ff;
+}
+
+.uploadButton {
+	width: 100%;
+}
+
+.uploadButton :global(.ant-upload) {
+	width: 100%;
+}
+
+.uploadButton :global(.ant-btn) {
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.profilePage {
+		padding: 16px;
+	}
+
+	.pageTitle {
+		font-size: 20px;
+		margin-bottom: 16px;
+	}
+}

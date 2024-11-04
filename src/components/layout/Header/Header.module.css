@@ -1,0 +1,35 @@
+.header {
+	padding: 0 24px;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+}
+
+.headerLeft {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.headerRight {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.logo {
+	font-family: var(--font-accent);
+	font-size: 1.5rem;
+	color: #1890ff;
+}
+
+.triggerButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

@@ -1,0 +1,61 @@
+.settingsPage {
+	padding: 24px;
+}
+
+.pageTitle {
+	margin: 0 0 24px 0;
+	font-size: 24px;
+	font-weight: 600;
+	color: #262626;
+}
+
+.settingsForm {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+:global(.ant-tabs-nav) {
+	margin-bottom: 24px;
+}
+
+:global(.ant-tabs-tab) {
+	font-size: 16px;
+	padding: 12px 24px !important;
+}
+
+:global(.ant-tabs-tab-active) {
+	font-weight: 500;
+}
+
+:global(.ant-form-item-label > label) {
+	font-weight: 500;
+	color: #262626;
+}
+
+:global(.ant-select-selector) {
+	border-radius: 6px !important;
+}
+
+:global(.ant-input-password) {
+	border-radius: 6px;
+}
+
+:global(.ant-switch-checked) {
+	background: #1890ff;
+}
+
+@media (max-width: 768px) {
+	.settingsPage {
+		padding: 16px;
+	}
+
+	.pageTitle {
+		font-size: 20px;
+		margin-bottom: 16px;
+	}
+
+	:global(.ant-tabs-tab) {
+		padding: 8px 16px !important;
+		font-size: 14px;
+	}
+}

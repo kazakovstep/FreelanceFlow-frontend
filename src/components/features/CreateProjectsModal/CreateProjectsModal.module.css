@@ -1,0 +1,88 @@
+/* CreateTaskModal.module.css */
+
+.form {
+	margin-top: 16px;
+}
+
+.form :global(.ant-form-item) {
+	margin-bottom: 20px;
+}
+
+.form :global(.ant-form-item:last-child) {
+	margin-bottom: 0;
+}
+
+.form :global(.ant-input),
+.form :global(.ant-select-selector),
+.form :global(.ant-picker) {
+	border-radius: 6px;
+}
+
+.form :global(.ant-input:hover),
+.form :global(.ant-select-selector:hover),
+.form :global(.ant-picker:hover) {
+	border-color: #40a9ff;
+}
+
+.form :global(.ant-input:focus),
+.form :global(.ant-select-selector:focus),
+.form :global(.ant-picker-focused) {
+	border-color: #1890ff;
+	box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.form :global(.ant-form-item-label) {
+	padding-bottom: 8px;
+}
+
+.form :global(.ant-form-item-label > label) {
+	font-weight: 500;
+	color: #262626;
+}
+
+.form :global(.ant-input-textarea) {
+	border-radius: 6px;
+}
+
+.form :global(.ant-select-selection-placeholder),
+.form :global(.ant-picker-input > input::placeholder) {
+	color: #bfbfbf;
+}
+
+/* Стили для модального окна */
+:global(.ant-modal-content) {
+	border-radius: 8px;
+	padding: 24px;
+}
+
+:global(.ant-modal-header) {
+	padding: 0;
+	margin-bottom: 24px;
+	border-bottom: none;
+}
+
+:global(.ant-modal-title) {
+	font-size: 20px;
+	font-weight: 600;
+	color: #262626;
+}
+
+:global(.ant-modal-footer) {
+	margin-top: 24px;
+	padding: 0;
+	border-top: none;
+}
+
+:global(.ant-modal-footer .ant-btn) {
+	border-radius: 6px;
+	height: 40px;
+	padding: 0 24px;
+}
+
+:global(.ant-modal-footer .ant-btn-primary) {
+	background: #1890ff;
+}
+
+:global(.ant-modal-footer .ant-btn-primary:hover) {
+	background: #40a9ff;
+}

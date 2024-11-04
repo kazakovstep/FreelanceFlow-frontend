@@ -1,0 +1,16 @@
+.layout {
+	min-height: 100vh;
+}
+
+.mainContent {
+	margin-left: 200px;
+	transition: margin-left 0.2s;
+}
+
+.content {
+	margin: 84px 24px 0;
+	padding: 24px;
+	min-height: calc(100vh - 64px - 70px);
+	background: #fff;
+	border-radius: 4px;
+}

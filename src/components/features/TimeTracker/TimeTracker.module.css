@@ -1,0 +1,16 @@
+.trackerCard {
+	text-align: center;
+	padding: 24px;
+}
+
+.trackerControls {
+	display: flex;
+	gap: 16px;
+	margin-bottom: 24px;
+	justify-content: center;
+}
+
+.timer {
+	font-size: 48px !important;
+	margin: 32px 0 !important;
+}

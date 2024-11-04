@@ -1,0 +1,59 @@
+/* ProjectsList.module.css */
+.projectCard {
+	height: 100%;
+	transition: all 0.3s ease;
+}
+
+.projectCard:hover {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	transform: translateY(-2px);
+}
+
+.projectInfo {
+	margin-top: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+/* Стили для мета-информации карточки */
+.projectCard :global(.ant-card-meta) {
+	margin-bottom: 16px;
+}
+
+/* Стили для аватара проекта */
+.projectCard :global(.ant-card-meta-avatar) {
+	display: flex;
+	align-items: center;
+}
+
+/* Стили для действий карточки */
+.projectCard :global(.ant-card-actions) {
+	background: #fafafa;
+}
+
+.projectCard :global(.ant-card-actions) > li {
+	margin: 12px 0;
+}
+
+.projectCard :global(.ant-card-actions) > li > span {
+	color: #1890ff;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+.projectCard :global(.ant-card-actions) > li > span:hover {
+	color: #40a9ff;
+}
+
+/* Стили для прогресс-бара */
+.projectCard :global(.ant-progress) {
+	margin-bottom: 8px;
+}
+
+/* Адаптивные стили */
+@media (max-width: 576px) {
+	.projectCard {
+		margin-bottom: 16px;
+	}
+}

@@ -1,0 +1,100 @@
+/* TasksList.module.css */
+
+.tasksTable {
+	margin-top: 16px;
+}
+
+/* Стили для заголовков таблицы */
+.tasksTable :global(.ant-table-thead > tr > th) {
+	background: #fafafa;
+	font-weight: 600;
+	color: #262626;
+	padding: 16px;
+}
+
+/* Стили для ячеек таблицы */
+.tasksTable :global(.ant-table-tbody > tr > td) {
+	padding: 16px;
+}
+
+/* Стили для строк при наведении */
+.tasksTable :global(.ant-table-tbody > tr:hover) {
+	background: #f5f5f5;
+}
+
+/* Стили для тегов */
+.tasksTable :global(.ant-tag) {
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-weight: 500;
+}
+
+/* Стили для кнопок действий */
+.tasksTable :global(.ant-btn) {
+	padding: 4px 8px;
+	height: 32px;
+	border-radius: 4px;
+}
+
+.tasksTable :global(.ant-btn:hover) {
+	background: #f5f5f5;
+}
+
+.tasksTable :global(.ant-btn-text) {
+	color: #262626;
+}
+
+.tasksTable :global(.ant-btn-text:hover) {
+	color: #1890ff;
+}
+
+/* Стили для кнопки удаления */
+.tasksTable :global(.ant-btn-dangerous) {
+	color: #ff4d4f;
+}
+
+.tasksTable :global(.ant-btn-dangerous:hover) {
+	color: #ff7875;
+	background: #fff1f0;
+}
+
+/* Стили для пространства между кнопками */
+.tasksTable :global(.ant-space) {
+	gap: 8px;
+}
+
+/* Стили для пустого состояния таблицы */
+.tasksTable :global(.ant-table-empty .ant-table-tbody > tr > td) {
+	padding: 48px;
+	text-align: center;
+}
+
+/* Стили для пагинации */
+.tasksTable :global(.ant-pagination) {
+	margin-top: 16px;
+	text-align: right;
+}
+
+.tasksTable :global(.ant-pagination-item-active) {
+	border-color: #1890ff;
+}
+
+.tasksTable :global(.ant-pagination-item-active a) {
+	color: #1890ff;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+	.tasksTable :global(.ant-table) {
+		overflow-x: auto;
+	}
+
+	.tasksTable :global(.ant-table-thead > tr > th),
+	.tasksTable :global(.ant-table-tbody > tr > td) {
+		padding: 12px 8px;
+	}
+
+	.tasksTable :global(.ant-tag) {
+		padding: 2px 6px;
+	}
+}

@@ -1,0 +1,67 @@
+/* page.module.css */
+.pageHeader {
+	margin-bottom: 24px;
+}
+
+.pageTitle {
+	font-family: var(--font-secondary);
+	font-size: 28px;
+	margin: 0;
+	color: var(--foreground);
+}
+
+.searchRow {
+	margin-bottom: 24px;
+}
+
+/* Стили для поисковой строки */
+.searchRow :global(.ant-input-search) {
+	max-width: 100%;
+}
+
+.searchRow :global(.ant-input-affix-wrapper) {
+	border-radius: 6px;
+}
+
+.searchRow :global(.ant-input-search-button) {
+	height: 100%;
+	border-radius: 0 6px 6px 0;
+}
+
+/* Адаптивные стили */
+@media (max-width: 576px) {
+	.pageHeader {
+		margin-bottom: 16px;
+	}
+
+	.pageTitle {
+		font-size: 24px;
+	}
+
+	.searchRow {
+		margin-bottom: 16px;
+	}
+}
+
+/* Анимация для кнопки создания проекта */
+.pageHeader :global(.ant-btn) {
+	transition: all 0.3s ease;
+}
+
+.pageHeader :global(.ant-btn:hover) {
+	transform: translateY(-2px);
+	box-shadow: 0 2px 8px rgba(24, 144, 255, 0.2);
+}
+
+/* Стили для модального окна */
+:global(.ant-modal-content) {
+	border-radius: 8px;
+}
+
+:global(.ant-modal-header) {
+	border-radius: 8px 8px 0 0;
+}
+
+:global(.ant-modal-footer) {
+	border-radius: 0 0 8px 8px;
+}
